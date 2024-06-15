@@ -16,8 +16,9 @@ function App() {
   const [dailys, setDaylis] = useState<DailyApi[]>([])
 
   useEffect(()=>{
-    fetch(`https://sheetdb.io/api/v1/0slv0y2nrtzm1`).then(res=>res.json()).then((newDailys)=>{
-      setDaylis(newDailys)
+    fetch(`https://sheetdb.io/api/v1/0slv0y2nrtzm1`).then(res=>res.json()).then((newDailys:DailyApi[])=>{
+    newDailys.reverse()  
+    setDaylis(newDailys)
     })
   },[])
 
