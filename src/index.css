@@ -1,0 +1,15 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+  background-color: #13111C;
+  color: #F4F4F4;
+  /* font */
+  font-family: "Play", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
