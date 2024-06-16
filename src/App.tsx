@@ -29,7 +29,7 @@ function App() {
       {
         dailys?.map((it)=>{
           return <>
-          <DailyBlock date={it.fecha} cypher={it.cifrado} comboCard1={it['1ra carta del combo']} comboCard2={it['2da carta del combo']} comboCard3={it['3ra carta del combo']}/>
+          <DailyBlock date={it.fecha} cipher={it.cifrado} comboCard1={it['1ra carta del combo']} comboCard2={it['2da carta del combo']} comboCard3={it['3ra carta del combo']}/>
           <Ad/>
           </>
         })

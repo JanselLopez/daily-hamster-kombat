@@ -4,7 +4,7 @@ const MorseCodeBlock = ({word}:{word?:string}) => {
     const morse = word?.split('')?.map((it)=>morseCoder(it))
   return (
     <div className='p-4 transition-all bg-gradient-to-b from-rose-800 to-indigo-900 hover:to-indigo-900 hover:from-rose-600 h-screen w-full flex flex-col justify-center items-center gap-4'>
-       <h2 className='text-4xl font-bold'>DAILY CYPHER</h2>
+       <h2 className='text-4xl font-bold'>DAILY CIPHER</h2>
         <h3 className='text-4xl font-semibold'>
         {
             word || '???'
