@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 
 import Ad from './components/Ad'
 import DailyBlock from './components/DailyBlock'
+import ScrollMobileController from './components/ScrollMobileController'
 
 interface DailyApi {
   fecha:string
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <>
+      {/* <NavBar/> */}
       {
         dailys?.map((it)=>{
           return <>
@@ -32,6 +34,7 @@ function App() {
           </>
         })
       }
+      <ScrollMobileController/>
     </>
   )
 }

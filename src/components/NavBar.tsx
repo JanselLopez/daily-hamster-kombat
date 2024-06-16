@@ -1,6 +1,8 @@
+
+
 const NavBar = () => {
   return (
-    <nav>
+    <nav className="fixed z-10 right-0">
         
     </nav>
   )
